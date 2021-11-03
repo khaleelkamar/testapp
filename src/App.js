@@ -12,7 +12,9 @@ import { Worker } from '@react-pdf-viewer/core'; // install this library
 export const App = () => {
 
   // Create new plugin instance
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+const defaultLayoutPluginInstance = defaultLayoutPlugin({
+    sidebarTabs: defaultTabs => [defaultTabs[0], defaultTabs[1]],
+});
   
   // for onchange event
   //const [pdfFile, setPdfFile]=useState(null);
