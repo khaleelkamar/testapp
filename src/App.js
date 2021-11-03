@@ -13,7 +13,7 @@ export const App = () => {
 
   // Create new plugin instance
 const defaultLayoutPluginInstance = defaultLayoutPlugin({
-    sidebarTabs: defaultTabs => [defaultTabs[0], defaultTabs[1]],
+    sidebarTabs: defaultTabs => [],
 });
   
   // for onchange event
