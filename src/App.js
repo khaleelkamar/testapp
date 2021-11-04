@@ -26,7 +26,7 @@ export const App = (props) => {
   var {Zoom ,ZoomIn,ZoomOut}=toolbarPluginInstance;
 
  // var CurrentScale = zoomPluginInstance.CurrentScale, Zoom = zoomPluginInstance.Zoom, ZoomIn = zoomPluginInstance.ZoomIn, ZoomOut = zoomPluginInstance.ZoomOut;
-  
+  //var CurrentScale=
   //const toolbarPluginInstance = toolbarPlugin();
   //const { Toolbar } = toolbarPluginInstance;
 
@@ -55,7 +55,7 @@ export const App = (props) => {
       <div
                 style={{
                   
-                    width: '1000px',
+                    
                     marginLeft: 'auto',
                     marginRight: 'auto',
                 }}
