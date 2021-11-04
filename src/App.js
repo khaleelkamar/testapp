@@ -23,10 +23,10 @@ export const App = (props) => {
   //var EnterFullScreen = fullScreenPluginInstance.EnterFullScreen;
   //console.log('test===>',fullScreenPluginInstance);
   var toolbarPluginInstance = zoomPlugin();
-  var {Zoom ,ZoomIn,ZoomOut}=toolbarPluginInstance;
+  var {ZoomIn,ZoomOut,CurrentScale}=toolbarPluginInstance;
 
  // var CurrentScale = zoomPluginInstance.CurrentScale, Zoom = zoomPluginInstance.Zoom, ZoomIn = zoomPluginInstance.ZoomIn, ZoomOut = zoomPluginInstance.ZoomOut;
-  //var CurrentScale=
+
   //const toolbarPluginInstance = toolbarPlugin();
   //const { Toolbar } = toolbarPluginInstance;
 
@@ -54,8 +54,7 @@ export const App = (props) => {
       
       <div
                 style={{
-                  
-                    
+                
                     marginLeft: 'auto',
                     marginRight: 'auto',
                 }}
@@ -82,7 +81,9 @@ export const App = (props) => {
        <ZoomIn />
        </div>
        <div style={{ display: 'inline-block',}}>
-       <Zoom />
+       <CurrentScale>
+                        {(props) => <>{`${Math.round(props.scale * 50)}%`}</>}
+         </CurrentScale>
        </div>
        <div style={{ display: 'inline-block',}}>
        <ZoomOut />
