@@ -82,7 +82,7 @@ export const App = (props) => {
        </div>
        <div style={{ display: 'inline-block',}}>
        <CurrentScale>
-                        {(props) => <>{`${Math.round(props.scale * 50)}%`}</>}
+                        {(props) => <>{`${Math.round(props.scale * 80)}%`}</>}
          </CurrentScale>
        </div>
        <div style={{ display: 'inline-block',}}>
