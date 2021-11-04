@@ -64,14 +64,17 @@ export const App = (props) => {
                 border: '1px solid rgba(0, 0, 0, 0.3)',
                 display: 'flex',
                 flexDirection: 'column',
-                height: '100%',
+                position: 'fixed',
+                //right:0,
+                zIndex: 1,
+                width: '100%',
             }}
         >
             <div
                 style={{
                     alignItems: 'center',
                     backgroundColor: '#eeeeee',
-                    borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
+                  
                     display: 'flex',
                     justifyContent: 'center',
                     padding: '4px',
