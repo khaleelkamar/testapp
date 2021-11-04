@@ -6,7 +6,19 @@ import { Viewer } from '@react-pdf-viewer/core'; // install this library
 
 
 // Plugins
-//import { defaultLayoutPlugin } from '@react-pdf-viewer N
+//import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout'; // install this library
+// Import the styles
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+// Worker
+//import { toolbarPlugin } from '@react-pdf-viewer/toolbar';
+import { Worker } from '@react-pdf-viewer/core'; // install this library
+
+export const App = () => {
+  //const  = defaultLayoutPlugin({
+ //   sidebarTabs: defaultTabs => [
+  //    defaultTabs[1], // Thumbnails tab
+ // ],
  // Toolbar:"",
 
   
