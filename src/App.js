@@ -60,6 +60,24 @@ export const App = (props) => {
                     marginRight: 'auto',
                 }}
             >
+               <div
+            style={{
+                border: '1px solid rgba(0, 0, 0, 0.3)',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
+            }}
+        >
+            <div
+                style={{
+                    alignItems: 'center',
+                    backgroundColor: '#eeeeee',
+                    borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    padding: '4px',
+                }}
+            >
        <div style={{ display: 'inline-block',}}>
        <ZoomIn />
        </div>
@@ -69,7 +87,8 @@ export const App = (props) => {
        <div style={{ display: 'inline-block',}}>
        <ZoomOut />
        </div>
-    
+       </div>
+    </div>
         {/* show pdf conditionally (if we have one)  */}
        
         {viewPdf&&<><Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
@@ -88,6 +107,7 @@ export const App = (props) => {
       
       
     </div>
+    
   )
 }
 
